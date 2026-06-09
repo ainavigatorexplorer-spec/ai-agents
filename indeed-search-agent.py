@@ -194,7 +194,7 @@ def run_job_matching_agent():
         
         # Second LLM Call: Generate final synthesis after consuming data
         final_response = client.chat.completions.create(
-            model="llama3-8b-8192",
+            model="openai/gpt-oss-120b",
             messages=messages
         )
         
