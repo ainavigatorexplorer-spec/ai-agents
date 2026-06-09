@@ -162,7 +162,7 @@ def run_job_matching_agent():
     
     # First LLM Call: Give the model the tools and let it generate parameters
     response = client.chat.completions.create(
-        model="llama3-8b-8192",  # Fast, highly accurate tool-use capability
+        model="openai/gpt-oss-120b",  # Fast, highly accurate tool-use capability
         messages=messages,
         tools=INDEED_TOOLS,
         tool_choice="auto"
